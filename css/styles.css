@@ -2,6 +2,7 @@
 
 Neon pink: #FE019A
 Light green: #81E4AE
+Teal: #008081
 Lime yellow: #C7EA46
 Deep purple: #301934
 
@@ -10,18 +11,23 @@ Deep purple: #301934
 body {
     margin: 0;
     background-color: black;
-    color: #81E4AE;
-    overflow: hidden;
     font-family: 'Inter', sans-serif;
 }
 
 .screen {
     position: relative;
-    background-color: #FE019A;
     width: 360px;
     height: 680px;
     margin: 0 auto;
     overflow: hidden;
+}
+
+#page1 {
+    background-color: #FE019A;
+}
+
+#page2 {
+    background-color: #C7EA46;
 }
 
 h1 {
@@ -30,7 +36,14 @@ h1 {
     margin-bottom: 70px;
     font-weight: 600;
     font-size: 40px;
+}
+
+#page1 {
     color: #81E4AE;
+}
+
+#page2 {
+    color: #301934;
 }
 
 p {
@@ -50,9 +63,16 @@ p {
 }
 
 .circle {
-    background-color: #301934;
     position: absolute;  
     border-radius: 100%;
+}
+
+#page1 .circle {
+    background-color: #301934;
+}
+
+#page2 .circle {
+    background-color: #008081;
 }
 
 #circle1 {
