@@ -2,7 +2,7 @@
 
 Neon pink: #FE019A
 Light green: #81E4AE
-Teal: #008081
+Teal: #006161;
 Lime yellow: #C7EA46
 Deep purple: #301934
 
@@ -12,6 +12,15 @@ body {
     margin: 0;
     background-color: black;
     font-family: 'Inter', sans-serif;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none; 
+              user-select: none;
 }
 
 .screen {
