@@ -19,14 +19,14 @@ body {
     position: relative;
     background-color: #FE019A;
     width: 360px;
-    height: 640px;
+    min-height: 660px;
     margin: 0 auto;
     overflow: hidden;
 }
 
 h1 {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 265px;
     margin-bottom: 70px;
     font-weight: 600;
     font-size: 40px;
