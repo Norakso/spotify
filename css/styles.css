@@ -18,8 +18,8 @@ body {
 .screen {
     position: relative;
     background-color: #FE019A;
-    width: 375px;
-    height: 667px;
+    width: 360px;
+    height: 640px;
     margin: 0 auto;
     overflow: hidden;
 }
