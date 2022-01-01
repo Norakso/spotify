@@ -1,1 +1,65 @@
+/* HEX CODES
 
+Neon pink: #FE019A
+Light green: #9FDFBC
+Lime yellow: #C7EA46
+Deep purple: #301934
+
+*/
+
+body {
+    margin: 0;
+    background-color: black;
+    color: #9FDFBC;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+}
+
+.screen {
+    position: relative;
+    background-color: #FE019A;
+    width: 375px;
+    height: 667px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 70px;
+    font-weight: 600;
+    font-size: 40px;
+    color: #9FDFBC;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    font-weight: 400;
+}
+
+.creator {
+    bottom: 40px;
+    left: 170px;
+    visibility: hidden;
+}
+
+.hashtag {
+    width: 135px;
+    left: 120px;
+    text-align: center;
+}
+
+.circle {
+    background-color: #301934;
+    position: absolute;  
+    border-radius: 100%;
+}
+
+#circle1 {
+    width: 250px;
+    height: 250px;
+    top: 450px;
+    left: -50px;
+}
