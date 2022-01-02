@@ -5,6 +5,7 @@ Light green: #81E4AE
 Teal: #006161;
 Lime yellow: #C7EA46
 Deep purple: #301934
+Dark blue: #012231;
 
 */
 
@@ -61,6 +62,16 @@ body {
     color: #81E4AE;
 }
 
+#page7 {
+    background-color: #012231;
+    color: #C7EA46;
+}
+
+#page8 {
+    background-color: #C7EA46;
+    color: #FE019A;
+}
+
 h1 {
     text-align: center;
     margin-top: 265px;
@@ -112,6 +123,14 @@ p {
 
 #page6 .circle {
     background-color: #FE019A;
+}
+
+#page7 .circle {
+    background-color: #006161;
+}
+
+#page8 .circle {
+    background-color: #012231;
 }
 
 #circle1 {
