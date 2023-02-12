@@ -112,7 +112,15 @@ body {
 }
 
 #animateProgress {
+    animation: progressBar 15s linear forwards;
+}
+
+#page1 #animateProgress {
     animation: progressBar 10s linear forwards;
+}
+
+#reanimateProgress {
+    animation: progressBar2 10s linear forwards;
 }
 
 @keyframes progressBar {
@@ -124,12 +132,44 @@ body {
     }
 }
 
-h1 {
+@keyframes progressBar2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.heading {
     text-align: center;
     margin-top: 265px;
     margin-bottom: 70px;
     font-weight: 600;
-    font-size: 40px;
+    opacity: 0;
+    animation: fadeInHeader 0.6s ease-in 2s forwards, fadeOutHeader 1s ease-out 8s forwards;
+}
+
+@keyframes fadeInHeader {
+    0% {
+        font-size: 1.5em;
+        opacity: 0;
+    }
+    100% {
+        font-size: 2.5em;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutHeader {
+    0% {
+        font-size: 2.5em;
+        opacity: 1;
+    }
+    100% {
+        font-size: 3em;
+        opacity: 0;
+    }
 }
 
 p {
@@ -142,11 +182,37 @@ p {
 
 .creator {
     bottom: 50px;
+    opacity: 0;
+    animation: slideUp 0.6s linear 2.7s forwards, fadeOut 1s linear 8s forwards;
 }
 
 .hashtag {
     bottom: 15px;
+    opacity: 0;
+    animation: slideUp 0.3s linear 3s forwards, fadeOut 1s linear 8s forwards;
 }
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
 
 .circle {
     position: absolute;  
@@ -185,9 +251,76 @@ p {
     background-color: #012231;
 }
 
-.circle1 {
-    width: 250px;
-    height: 250px;
-    bottom: -40px;
-    left: -50px;
+.bigCircle {
+    animation: bigAppear 2s ease-in-out forwards, slideOutLeft 0.5s linear 9.3s forwards;
+}
+
+.smallCircle {
+    width: 130px;
+    height: 130px;
+    top: 70px;
+    right: 20px;
+    animation: smallAppear 1s ease-in-out forwards, slideOutRight 0.7s linear 9s forwards;
+}
+
+.smallCircle2 {
+    width: 40px;
+    height: 40px;
+    top: 70px;
+    right: 160px;
+    animation: smallAppear 1s ease-in-out forwards, slideOutLeft 1s linear 8.7s forwards;
+
+}
+
+@keyframes bigAppear {
+    0% {
+        border-radius: 100% 0 100% 100%;
+        width: 0;
+        height: 0;
+        top: 0;
+        right: 0;
+    }
+    50% {
+        border-radius: 0;
+        width: 400px;
+        height: 800px;
+        top: 0;
+        right: 0;
+    }
+    75% {
+        border-radius: 100% 100% 100% 0;
+    }
+    100% {
+        width: 250px;
+        height: 250px;
+        top: 470px;
+        right: 160px;
+    }
+}
+
+@keyframes smallAppear {
+    0% {
+        width: 0;
+        height: 0;
+        top: 135px;
+        right: 85px;
+    }
+    70% {
+        width: 0;
+        height: 0;
+        top: 135px;
+        right: 85px;
+    }
+}
+
+@keyframes slideOutLeft {
+    100% {
+        transform: translateX(-500px);
+    }
+}
+
+@keyframes slideOutRight {
+    100% {
+        transform: translateX(500px);
+    }
 }
