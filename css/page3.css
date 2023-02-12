@@ -1,0 +1,238 @@
+#page3 {
+    background-color: #C7EA46;
+    color: #014d4d;
+}
+
+#page3 .heading1 {
+    font-weight: 500;
+    margin: 120px auto 80px auto;
+    text-align: center;
+    opacity: 0;
+    width: 80%;
+    font-size: 1.2em;
+    animation: slideUp3 1s linear 0.5s forwards, slideOut3 0.5s linear 8s forwards;
+}
+
+#page3 .heading2 {
+    font-weight: 500;
+    margin: 120px auto 80px auto;
+    text-align: center;
+    opacity: 0;
+    width: 80%;
+    font-size: 1.2em;
+    animation: slideUp3 1s linear 9.5s forwards, fadeOutAll 0.5s linear 34s forwards;
+}
+
+@keyframes slideUp3 {
+    100% {
+        opacity: 1;
+        margin: 100px auto 80px auto;
+    }
+}
+
+@keyframes slideOut3 {
+    100% {
+        opacity: 0;
+        margin: 80px auto 100px auto;
+    }
+}
+
+#page3 p {
+    position: absolute;
+    z-index: 0;
+}
+
+#page3 .job1 {
+    top: 242px;
+    left: -300px;
+    animation: slideIn1 1s linear 2.5s forwards, undisplay 0.5s linear 8s forwards;
+}
+
+@keyframes slideIn1 {
+    100% {
+        left: 53%;
+    }
+}
+
+#page3 .job2 {
+    top: 316px;
+    left: -300px;
+    animation: slideIn2 1s linear 3.5s forwards, undisplay 0.5s linear 8s forwards;
+}
+
+@keyframes slideIn2 {
+    100% {
+        left: 48%;
+    }
+}
+
+#page3 .job3 {
+    top: 390px;
+    left: -300px;
+    animation: slideIn3 1s linear 4.5s forwards, undisplay 0.5s linear 8s forwards;
+}
+
+@keyframes slideIn3 {
+    100% {
+        left: 43%;
+    }
+}
+
+#page3 .job4 {
+    top: 464px;
+    left: -300px;
+    animation: slideIn4 1s linear 5.5s forwards, undisplay 0.5s linear 8s forwards;
+}
+
+@keyframes slideIn4 {
+    100% {
+        left: 38%;
+    }
+}
+
+@keyframes undisplay {
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#page3 .jobPosition {
+    position: relative;
+    z-index: 1;
+    display: block;
+    border-radius: 0 25px 25px 0;
+    text-align: center;
+    padding: 1.2em;
+    margin: 1em;
+    margin-left: -200px;
+}
+
+@keyframes undisplayDivs {
+    80% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+        padding: 1.2em;
+        margin: 1em;
+        display: block;
+    }
+    100% {
+        opacity: 0;
+        margin: -60px;
+        padding: 0;
+        display: none;
+    }
+}
+
+#page3 .rank1 {
+    background-color: #FE019A;
+    color: #FE019A;
+    animation: animateRank1 1.5s linear 2.5s forwards, undisplayDivs 0.5s linear 8s forwards;
+    width: 40%;
+}
+
+#page3 .rank2 {
+    background-color: #006161;
+    color: #006161;
+    animation: animateRank2 1.5s linear 3.5s forwards, undisplayDivs 0.5s linear 8s forwards;
+    width: 35%;
+}
+
+#page3 .rank3 {
+    background-color: #301934;
+    color: #301934;
+    animation: animateRank3 1.5s linear 4.5s forwards, undisplayDivs 0.5s linear 8s forwards;
+    width: 30%;
+}
+
+#page3 .rank4 {
+    background-color: #012231;
+    color: #012231;
+    animation: animateRank4 1.5s linear 5.5s forwards, undisplayDivs 0.5s linear 8s forwards;
+    width: 25%;
+}
+
+@keyframes animateRank1 {
+    60% {
+        margin-left: 0;
+        color: #FE019A;
+    }
+    100% {
+        color: white;
+        margin-left: 0;
+    }
+}
+
+@keyframes animateRank2 {
+    60% {
+        margin-left: 0;
+        color: #006161;
+    }
+    100% {
+        color: white;
+        margin-left: 0;
+    }
+}
+
+@keyframes animateRank3 {
+    60% {
+        margin-left: 0;
+        color: #301934;
+    }
+    100% {
+        color: white;
+        margin-left: 0;
+    }
+}
+
+@keyframes animateRank4 {
+    60% {
+        margin-left: 0;
+        color: #012231;
+    }
+    100% {
+        color: white;
+        margin-left: 0;
+    }
+}
+
+#page3 ol {
+    width: 80%;
+}
+
+#page3 li {
+    opacity: 0;
+    margin: 30px 0;
+    margin-top: 60px;
+}
+
+#page3 .project1 {
+    animation: appear3 0.3s linear 11s forwards, fadeOutAll 0.5s linear 34s forwards;
+}
+#page3 .project2 {
+    animation: appear3 0.3s linear 15s forwards, fadeOutAll 0.5s linear 34s forwards;
+}
+#page3 .project3 {
+    animation: appear3 0.3s linear 22s forwards, fadeOutAll 0.5s linear 34s forwards;
+}
+#page3 .project4 {
+    animation: appear3 0.3s linear 28s forwards, fadeOutAll 0.5s linear 34s forwards;
+}
+
+@keyframes appear3 {
+    100% {
+        opacity: 1;
+        margin-top: 30px;
+    }
+}
+
+@keyframes fadeOutAll {
+    100% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+}

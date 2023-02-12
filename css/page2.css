@@ -1,0 +1,111 @@
+#page2 {
+    background-color: #006161;
+    color: #C7EA46;
+}
+
+#page2 p {
+    text-align: center;
+}
+
+#page2 .totalCourses {
+    font-size: 1.2em;
+    opacity: 0;
+    width: 85%;
+    margin: 240px auto 0 auto;
+    animation: slideUp 0.7s linear 0.4s forwards, moveUp 0.5s ease-in-out 4.8s forwards, fadeUp 0.5s linear 10s forwards;
+}
+
+@keyframes moveUp {
+    100% {
+        margin-top: 130px;
+    }
+}
+
+#page2 .topCourse {
+    font-weight: 600;
+    opacity: 0;
+    width: 70%;
+    margin: 20px auto 0 auto;
+    animation: slideUp 0.5s linear 3s forwards, fadeUp 0.5s linear 10s forwards, slideOut 0.5s linear 16.5s forwards;
+}
+
+@keyframes fadeUp {
+    100% {
+        margin-top: 20px;
+        opacity: 0;
+    }
+}
+
+#page2 .square1, #page2 .square2 {
+    display: block;
+    position: absolute;
+    background-color: #301934;
+    width: 160px;
+    height: 160px;
+    margin-top: 60px;
+    margin-left: 100px;
+    opacity: 0;
+}
+
+#page2 .square1 {
+    transform: rotateZ(45deg);
+    animation: fadeIn 0.5s linear 5.5s forwards, rotateSquare1 20s linear;
+}
+
+#page2 .square2 {
+    animation: fadeIn 0.5s linear 5.5s forwards, rotateSquare2 20s linear;
+}
+
+@keyframes rotateSquare1 {
+    100% {
+        transform: rotateZ(225deg);
+    }
+}
+
+@keyframes rotateSquare2 {
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+
+#page2 img {
+    padding: 10px;
+    opacity: 0;
+    width: 150px;
+    border-radius: 2px;
+    display: block;
+    margin: 55px auto 0 auto;
+    animation: fadeIn 0.5s linear 5.5s forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+#page2 .topCompany {
+    font-size: 1em;
+    opacity: 0;
+    width: 80%;
+    margin: 70px auto 0 auto;
+    animation: slideUp 0.5s linear 11s forwards;
+}
+
+@keyframes slideOut {
+    100% {
+        margin-top: 1000px;
+        opacity: 0;
+    }
+}
