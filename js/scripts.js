@@ -73,7 +73,7 @@ function plusPages(n){
     }
     if ((n == 0 || n == -1) && document.getElementsByClassName("screen").id == "page1") {
         myTimer = setInterval(function(){plusPages(n + 1)}, 8500);
-    } else if (n == 2) {
+    } else if (pageIndex == 3) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 35000);
     } else {
         myTimer = setInterval(function(){plusPages(n + 1)}, 18000);
@@ -114,7 +114,7 @@ function newPage(n) {
     } else if (n == 2) {
         var totalCourses = document.createElement("p");
         totalCourses.classList.add("totalCourses");
-        totalCourses.innerHTML = "I have participated in 4 different organisations' science courses"
+        totalCourses.innerHTML = "I have participated in 4 different organisations' science and tech courses"
 
         var topCourse = document.createElement("p");
         topCourse.classList.add("topCourse");
