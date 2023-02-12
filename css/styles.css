@@ -32,24 +32,9 @@ body {
     overflow: hidden;
 }
 
-#page1 {
-    background-color: #FE019A;
-    color: #81E4AE;
-}
-
-#page2 {
-    background-color: #C7EA46;
-    color: #301934;
-}
-
-#page3 {
+#page4 {
     background-color: #301934;
     color: #C7EA46;
-}
-
-#page4 {
-    background-color: #006161;
-    color: #FE019A;
 }
 
 #page5 {
@@ -73,6 +58,8 @@ body {
 }
 
 .progress-bar {
+    position:relative;
+    z-index: 1;
     column-count: 8;
     column-gap: 0.4em;
     margin: 0.5em;
@@ -112,15 +99,19 @@ body {
 }
 
 #animateProgress {
-    animation: progressBar 15s linear forwards;
+    animation: progressBar 18s linear forwards;
 }
 
 #page1 #animateProgress {
-    animation: progressBar 10s linear forwards;
+    animation: progressBar 8.5s linear forwards;
+}
+
+#page3 #animateProgress {
+    animation: progressBar 35s linear forwards;
 }
 
 #reanimateProgress {
-    animation: progressBar2 10s linear forwards;
+    animation: progressBar2 9s linear forwards;
 }
 
 @keyframes progressBar {
@@ -141,87 +132,6 @@ body {
     }
 }
 
-.heading {
-    text-align: center;
-    margin-top: 265px;
-    margin-bottom: 70px;
-    font-weight: 600;
-    opacity: 0;
-    animation: fadeInHeader 0.6s ease-in 2s forwards, fadeOutHeader 1s ease-out 8s forwards;
-}
-
-@keyframes fadeInHeader {
-    0% {
-        font-size: 1.5em;
-        opacity: 0;
-    }
-    100% {
-        font-size: 2.5em;
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOutHeader {
-    0% {
-        font-size: 2.5em;
-        opacity: 1;
-    }
-    100% {
-        font-size: 3em;
-        opacity: 0;
-    }
-}
-
-p {
-    position: absolute;
-    font-weight: 400;
-    width: 150px;
-    left: 105px;
-    text-align: center;
-}
-
-.creator {
-    bottom: 50px;
-    opacity: 0;
-    animation: slideUp 0.6s linear 2.7s forwards, fadeOut 1s linear 8s forwards;
-}
-
-.hashtag {
-    bottom: 15px;
-    opacity: 0;
-    animation: slideUp 0.3s linear 3s forwards, fadeOut 1s linear 8s forwards;
-}
-
-@keyframes slideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
-
-.circle {
-    position: absolute;  
-    border-radius: 100%;
-}
-
-#page1 .circle {
-    background-color: #301934;
-}
 
 #page2 .circle {
     background-color: #006161;
@@ -249,78 +159,4 @@ p {
 
 #page8 .circle {
     background-color: #012231;
-}
-
-.bigCircle {
-    animation: bigAppear 2s ease-in-out forwards, slideOutLeft 0.5s linear 9.3s forwards;
-}
-
-.smallCircle {
-    width: 130px;
-    height: 130px;
-    top: 70px;
-    right: 20px;
-    animation: smallAppear 1s ease-in-out forwards, slideOutRight 0.7s linear 9s forwards;
-}
-
-.smallCircle2 {
-    width: 40px;
-    height: 40px;
-    top: 70px;
-    right: 160px;
-    animation: smallAppear 1s ease-in-out forwards, slideOutLeft 1s linear 8.7s forwards;
-
-}
-
-@keyframes bigAppear {
-    0% {
-        border-radius: 100% 0 100% 100%;
-        width: 0;
-        height: 0;
-        top: 0;
-        right: 0;
-    }
-    50% {
-        border-radius: 0;
-        width: 400px;
-        height: 800px;
-        top: 0;
-        right: 0;
-    }
-    75% {
-        border-radius: 100% 100% 100% 0;
-    }
-    100% {
-        width: 250px;
-        height: 250px;
-        top: 470px;
-        right: 160px;
-    }
-}
-
-@keyframes smallAppear {
-    0% {
-        width: 0;
-        height: 0;
-        top: 135px;
-        right: 85px;
-    }
-    70% {
-        width: 0;
-        height: 0;
-        top: 135px;
-        right: 85px;
-    }
-}
-
-@keyframes slideOutLeft {
-    100% {
-        transform: translateX(-500px);
-    }
-}
-
-@keyframes slideOutRight {
-    100% {
-        transform: translateX(500px);
-    }
 }
