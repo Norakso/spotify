@@ -114,7 +114,14 @@
         top: 0;
         right: 0;
     }
-    50% {
+    30% {
+        border-radius: 0;
+        width: 400px;
+        height: 800px;
+        top: 0;
+        right: 0;
+    }
+    60% {
         border-radius: 0;
         width: 400px;
         height: 800px;
