@@ -182,11 +182,11 @@ function newPage(n) {
 
         var project2 = document.createElement("li");
         project2.classList.add("project2");
-        project2.innerHTML = "Regulating the conversion of Hello World!'s courses to match our new formats and standards."
+        project2.innerHTML = "Regulating the restructuring of Hello World!'s courses to match our new formats and standards."
 
         var project3 = document.createElement("li");
         project3.classList.add("project3");
-        project3.innerHTML = "Inspiring kids to try coding on a weekly basis and getting inspired myself from project with partner companies."
+        project3.innerHTML = "Inspiring kids to try coding on a weekly basis and getting inspired myself from collaborations with partner companies."
 
         var project4 = document.createElement("li");
         project4.classList.add("project4");
