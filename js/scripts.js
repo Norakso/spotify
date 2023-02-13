@@ -174,26 +174,22 @@ function newPage(n) {
         heading2.classList.add("heading2");
         heading2.innerHTML = "My favorite projects at Hello World!";
 
-        var projects = document.createElement("ol");
-
-        var project1 = document.createElement("li")
-        project1.classList.add("project1");
+        var project1 = document.createElement("div")
+        project1.classList.add("projects", "project1");
         project1.innerHTML = "Organizing and hosting girls-only inspirational events for young girls to try coding and digital creation."
 
-        var project2 = document.createElement("li");
-        project2.classList.add("project2");
+        var project2 = document.createElement("div");
+        project2.classList.add("projects", "project2");
         project2.innerHTML = "Regulating the restructuring of Hello World!'s courses to match our new formats and standards."
 
-        var project3 = document.createElement("li");
-        project3.classList.add("project3");
+        var project3 = document.createElement("div");
+        project3.classList.add("projects", "project3");
         project3.innerHTML = "Inspiring kids to try coding on a weekly basis and getting inspired myself from collaborations with partner companies."
 
-        var project4 = document.createElement("li");
-        project4.classList.add("project4");
+        var project4 = document.createElement("div");
+        project4.classList.add("projects", "project4");
         project4.innerHTML = "Developing a web quiz recommending participants a suitable course based on preferences and experiences."
         
-        projects.append(project1, project2, project3, project4);
-
-        document.getElementById("content").append(heading1, p1, p2, p3, p4, rank1, rank2, rank3, rank4, heading2, projects);
+        document.getElementById("content").append(heading1, p1, p2, p3, p4, rank1, rank2, rank3, rank4, heading2, project1, project2, project3, project4);
     }
 }

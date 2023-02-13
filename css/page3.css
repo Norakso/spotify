@@ -5,7 +5,7 @@
 
 #page3 .heading1 {
     font-weight: 500;
-    margin: 120px auto 80px auto;
+    margin: 100px auto 100px auto;
     text-align: center;
     opacity: 0;
     width: 80%;
@@ -15,25 +15,32 @@
 
 #page3 .heading2 {
     font-weight: 500;
-    margin: 120px auto 80px auto;
+    margin: 100px auto 70px auto;
     text-align: center;
     opacity: 0;
     width: 80%;
     font-size: 1.2em;
-    animation: slideUp3 1s linear 9.5s forwards, fadeOutAll 0.5s linear 34s forwards;
+    animation: slideUpOther3 1s linear 9.5s forwards, fadeOutAll 0.5s linear 34s forwards;
 }
 
 @keyframes slideUp3 {
     100% {
         opacity: 1;
-        margin: 100px auto 80px auto;
+        margin: 80px auto 100px auto;
+    }
+}
+
+@keyframes slideUpOther3 {
+    100% {
+        opacity: 1;
+        margin: 80px auto 70px auto;
     }
 }
 
 @keyframes slideOut3 {
     100% {
         opacity: 0;
-        margin: 80px auto 100px auto;
+        margin: 60px auto 120px auto;
     }
 }
 
@@ -200,33 +207,56 @@
     }
 }
 
-#page3 ol {
-    width: 80%;
-}
-
-#page3 li {
+#page3 .projects {
     opacity: 0;
-    margin: 30px 0;
-    margin-top: 60px;
+    width: 80%;
+    padding: 1em;
+    margin: 30px auto;
+    border-radius: 25px;
+    color: white;
+    font-size: 0.85em;
+    text-align: center;
 }
 
 #page3 .project1 {
-    animation: appear3 0.3s linear 11s forwards, fadeOutAll 0.5s linear 34s forwards;
+    margin-top: 500px;
+    background-color: #FE019A;
+    animation: appearFromBottom 0.4s ease-out 11s forwards, fadeOutAll 0.5s linear 34s forwards;
 }
 #page3 .project2 {
-    animation: appear3 0.3s linear 15s forwards, fadeOutAll 0.5s linear 34s forwards;
+    background-color: #006161;
+    opacity: 1;
+    animation: appearFromRight 0.4s ease-out 15s backwards, fadeOutAll 0.5s linear 34s forwards;
 }
 #page3 .project3 {
-    animation: appear3 0.3s linear 22s forwards, fadeOutAll 0.5s linear 34s forwards;
+    background-color: #301934;
+    opacity: 1;
+    animation: appearFromLeft 0.4s ease-out 22s backwards, fadeOutAll 0.5s linear 34s forwards;
 }
 #page3 .project4 {
-    animation: appear3 0.3s linear 28s forwards, fadeOutAll 0.5s linear 34s forwards;
+    margin-top: 200px;
+    background-color: #012231;
+    animation: appearFromBottom 0.4s ease-out 28s forwards, fadeOutAll 0.5s linear 34s forwards;
 }
 
-@keyframes appear3 {
+@keyframes appearFromBottom {
     100% {
         opacity: 1;
         margin-top: 30px;
+    }
+}
+
+@keyframes appearFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(90px);
+    }
+}
+
+@keyframes appearFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-90px);
     }
 }
 
