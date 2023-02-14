@@ -32,12 +32,7 @@ body {
     overflow: hidden;
 }
 
-#page5 {
-    background-color: #81E4AE;
-    color: #301934;
-}
-
-#page8 {
+#page7 {
     background-color: #C7EA46;
     color: #FE019A;
 }
@@ -45,7 +40,7 @@ body {
 .progress-bar {
     position: relative;
     z-index: 1;
-    column-count: 8;
+    column-count: 7;
     column-gap: 0.4em;
     margin: 0.5em;
 }

@@ -1,4 +1,4 @@
-let pages = ["page1", "page2", "page3", "page4", "page5", "page6", "page7", "page8"];
+let pages = ["page1", "page2", "page3", "page4", "page5", "page6", "page7"];
 
 var pageIndex = 1;
 showPage(pageIndex);
@@ -10,7 +10,7 @@ function page(n) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 8500);
     } else if (pageIndex + n == 3) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 35000);
-    } else if (pageIndex + n == 7) {
+    } else if (pageIndex + n == 6) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 24000);
     }
     else {
@@ -78,10 +78,9 @@ function plusPages(n){
         myTimer = setInterval(function(){plusPages(n + 1)}, 8500);
     } else if (pageIndex == 3) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 35000);
-    } else if (pageIndex == 7) {
+    } else if (pageIndex == 6) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 24000);
-    }
-    else {
+    } else {
         myTimer = setInterval(function(){plusPages(n + 1)}, 18000);
     }
 }
@@ -107,8 +106,6 @@ function newPage(n) {
         page6();
     } else if (n == 7) {
         page7();
-    } else if (n == 8) {
-        page8();
     }
 }
 
@@ -258,10 +255,6 @@ function page4() {
 }
 
 function page5() {
-    
-}
-
-function page6() {
     var paragraph1 = document.createElement("p");
     paragraph1.classList.add("p1");
     paragraph1.innerHTML = "I can keep on rambling about who I am and what I do";
@@ -291,7 +284,7 @@ function page6() {
     document.getElementById("content").append(paragraph1, paragraph2, paragraph3, playlist, linkToPdf);
 }
 
-function page7() {
+function page6() {
     var spotify = document.createElement("p");
     spotify.classList.add("spotify");
     spotify.innerHTML = "There is one company that has lived in my head, rent-free, ever since I got interested in tech.";
@@ -315,6 +308,6 @@ function page7() {
     document.getElementById("content").append(spotify, spotifyLogo, IGEday, funding, user);
 }
 
-function page8() {
+function page7() {
 
 }
