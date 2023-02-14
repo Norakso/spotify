@@ -1,0 +1,52 @@
+#page7 {
+    background-color: #012231;
+    color: #C7EA46;
+    text-align: center;
+}
+
+#page7 .introducePlaylist {
+    font-size: 1.3em;
+    font-weight: 400;
+    width: 80%;
+    margin: 120px auto 50px auto;
+}
+
+#page7 .playlist {
+    display: block;
+    width: 250px;
+    height: 0;
+    margin: 246px auto 0 auto;
+    box-shadow: 0 0 10px rgba(199, 234, 70, 0.3);
+    object-fit: cover;
+    object-position: 0 0;
+    animation: foldUp 2s linear forwards;
+}
+
+#page7 .download {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    background: transparent;
+    border: #C7EA46 solid 5px;
+    border-radius: 25px;
+    padding: 1em 2em;
+    color: #C7EA46;
+}
+
+#page7 .download:hover {
+    cursor: pointer;
+    background: rgba(199, 234, 70, 0.05);
+}
+
+@keyframes foldUp {
+    0% {
+        width: 250px;
+        height: 0;
+        margin: 246px auto 0 auto;
+    }
+    100% {
+        width: 250px;
+        height: 246px;
+        margin: 0 auto 0 auto;
+    }
+}

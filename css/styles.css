@@ -28,7 +28,7 @@ body {
     position: relative;
     width: 360px;
     height: 680px;
-    margin: 20px auto;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -45,11 +45,6 @@ body {
 #page6 {
     background-color: #301934;
     color: #81E4AE;
-}
-
-#page7 {
-    background-color: #012231;
-    color: #C7EA46;
 }
 
 #page8 {

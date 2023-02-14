@@ -191,5 +191,33 @@ function newPage(n) {
         project4.innerHTML = "Developing a web quiz recommending participants a suitable course based on preferences and experiences."
         
         document.getElementById("content").append(heading1, p1, p2, p3, p4, rank1, rank2, rank3, rank4, heading2, project1, project2, project3, project4);
+    } else if (n == 4) {
+
+    } else if (n == 5) {
+
+    } else if (n == 6) {
+
+    } else if (n == 7) {
+        var paragraph = document.createElement("p");
+        paragraph.classList.add("introducePlaylist");
+        paragraph.innerHTML = "I put my most relevant experiences and interests in a playlist.";
+
+        var playlist = document.createElement("img");
+        playlist.src = "images/this_is_nora.jpeg";
+        playlist.classList.add("playlist");
+
+        var linkToPdf = document.createElement("a");
+        linkToPdf.href = "cv/Nora_Sorsenger_CV_ENG.pdf";
+        linkToPdf.download = "cv/Nora_Sorsenger_CV_ENG.pdf".split('/').pop();
+
+        var button = document.createElement("button");
+        button.classList.add("download");
+        button.innerHTML = "Download Playlist";
+
+        linkToPdf.appendChild(button);
+
+        document.getElementById("content").append(paragraph, playlist, linkToPdf);
+    } else if (n == 8) {
+
     }
 }
