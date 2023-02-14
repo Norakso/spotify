@@ -84,22 +84,22 @@ body {
 }
 
 #animateProgress {
-    -webkit-animation: progressBar 18s linear forwards;
     animation: progressBar 18s linear forwards;
 }
 
 #page1 #animateProgress {
-    -webkit-animation: progressBar 8.5s linear forwards;
     animation: progressBar 8.5s linear forwards;
 }
 
 #page3 #animateProgress {
-    -webkit-animation: progressBar 35s linear forwards;
     animation: progressBar 35s linear forwards;
 }
 
+#page7 #animateProgress {
+    animation: progressBar 24s linear forwards;
+}
+
 #reanimateProgress {
-    -webkit-animation: progressBar 9s linear forwards;
     animation: progressBar2 9s linear forwards;
 }
 

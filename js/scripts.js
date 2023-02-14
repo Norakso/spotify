@@ -10,7 +10,10 @@ function page(n) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 8500);
     } else if (pageIndex + n == 3) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 35000);
-    } else {
+    } else if (pageIndex + n == 7) {
+        myTimer = setInterval(function(){plusPages(n + 1)}, 24000);
+    }
+    else {
         myTimer = setInterval(function(){plusPages(n + 1)}, 18000);
     }
     showPage(pageIndex += n);
@@ -75,7 +78,10 @@ function plusPages(n){
         myTimer = setInterval(function(){plusPages(n + 1)}, 8500);
     } else if (pageIndex == 3) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 35000);
-    } else {
+    } else if (pageIndex == 7) {
+        myTimer = setInterval(function(){plusPages(n + 1)}, 24000);
+    }
+    else {
         myTimer = setInterval(function(){plusPages(n + 1)}, 18000);
     }
 }

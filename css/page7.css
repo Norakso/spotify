@@ -18,7 +18,7 @@
     width: 200px;
     top: 30%;
     left: 80px;
-    animation: fadeInTextLogo 0.5s linear 6.5s backwards, fadeOutTextLogo 0.5s linear 17.5s forwards;
+    animation: fadeInTextLogo 0.5s linear 6.5s backwards, fadeOutTextLogo 0.5s linear 23.5s forwards;
 }
 
 @keyframes fadeInTextLogo {
@@ -44,15 +44,15 @@
 }
 
 #page7 .IGEday {
-    animation: slideInInfo 0.5s linear 7.5s backwards, fadeOutTextLogo 0.5s linear 11s forwards;
+    animation: slideInInfo 0.5s linear 7.5s backwards, fadeOutTextLogo 0.5s linear 13s forwards;
 }
 
 #page7 .funding {
-    animation: slideInInfo 0.5s linear 11.5s backwards, fadeOutTextLogo 0.5s linear 15s forwards;
+    animation: slideInInfo 0.5s linear 13.5s backwards, fadeOutTextLogo 0.5s linear 19s forwards;
 }
 
 #page7 .user {
-    animation: slideInInfo 0.5s linear 15.5s backwards, fadeOutTextLogo 0.5s linear 17.5s forwards;
+    animation: slideInInfo 0.5s linear 19.5s backwards, fadeOutTextLogo 0.5s linear 23.5s forwards;
 }
 
 @keyframes slideInInfo {
