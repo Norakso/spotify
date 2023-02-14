@@ -202,7 +202,7 @@ function page3() {
 
     var project1 = document.createElement("div")
     project1.classList.add("projects", "project1");
-    project1.innerHTML = "Organizing and hosting girls-only inspirational events for young girls to try coding and digital creation.";
+    project1.innerHTML = "Organizing and hosting girls-only inspirational events for youths to try out coding and digital creation.";
 
     var project2 = document.createElement("div");
     project2.classList.add("projects", "project2");
@@ -265,7 +265,7 @@ function page5() {
 
     var paragraph3 = document.createElement("p");
     paragraph3.classList.add("introducePlaylist");
-    paragraph3.innerHTML = "I put my most relevant experiences and interests in a playlist.";
+    paragraph3.innerHTML = "I have put my most relevant experiences and interests in a playlist.";
 
     var playlist = document.createElement("img");
     playlist.src = "images/this_is_nora.jpeg";
