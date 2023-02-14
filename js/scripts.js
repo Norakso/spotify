@@ -229,9 +229,17 @@ function newPage(n) {
     } else if (n == 6) {
 
     } else if (n == 7) {
-        var paragraph = document.createElement("p");
-        paragraph.classList.add("introducePlaylist");
-        paragraph.innerHTML = "I put my most relevant experiences and interests in a playlist.";
+        var paragraph1 = document.createElement("p");
+        paragraph1.classList.add("p1");
+        paragraph1.innerHTML = "I can keep on rambling about who I am and what I do";
+
+        var paragraph2 = document.createElement("p");
+        paragraph2.classList.add("p2");
+        paragraph2.innerHTML = "but let's cut to the chase.";
+
+        var paragraph3 = document.createElement("p");
+        paragraph3.classList.add("introducePlaylist");
+        paragraph3.innerHTML = "I put my most relevant experiences and interests in a playlist.";
 
         var playlist = document.createElement("img");
         playlist.src = "images/this_is_nora.jpeg";
@@ -247,7 +255,7 @@ function newPage(n) {
 
         linkToPdf.appendChild(button);
 
-        document.getElementById("content").append(paragraph, playlist, linkToPdf);
+        document.getElementById("content").append(paragraph1, paragraph2, paragraph3, playlist, linkToPdf);
     } else if (n == 8) {
 
     }
