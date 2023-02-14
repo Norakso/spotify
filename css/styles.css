@@ -37,11 +37,6 @@ body {
     color: #301934;
 }
 
-#page6 {
-    background-color: #301934;
-    color: #C7EA46;
-}
-
 #page8 {
     background-color: #C7EA46;
     color: #FE019A;
@@ -120,31 +115,3 @@ body {
     }
 }
 
-
-#page2 .circle {
-    background-color: #006161;
-}
-
-#page3 .circle {
-    background-color: #006161;
-}
-
-#page4 .circle {
-    background-color: #C7EA46;
-}
-
-#page5 .circle {
-    background-color: #FE019A;
-}
-
-#page6 .circle {
-    background-color: #FE019A;
-}
-
-#page7 .circle {
-    background-color: #006161;
-}
-
-#page8 .circle {
-    background-color: #012231;
-}

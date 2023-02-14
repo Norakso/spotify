@@ -1,105 +1,63 @@
 #page7 {
-    background-color: #012231;
-    color: #C7EA46;
+    background-color: #301934;
+    color: #E3BC9A;
+}
+
+#page7 .spotify {
+    font-size: 1.7em;
+    font-weight: 600;
+    width: 90%;
+    margin: 60% auto;
+    text-align: center;
+    animation: fadeInTextLogo 0.5s linear 0.5s backwards, fadeOutTextLogo 0.5s linear 6s forwards;
+}
+
+#page7 .spotifyLogo {
+    position: absolute;
+    display: block;
+    width: 200px;
+    top: 30%;
+    left: 80px;
+    animation: fadeInTextLogo 0.5s linear 6.5s backwards, fadeOutTextLogo 0.5s linear 17.5s forwards;
+}
+
+@keyframes fadeInTextLogo {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOutTextLogo {
+    100% {
+        opacity: 0;
+    }
+}
+
+#page7 .IGEday, #page7 .funding, #page7 .user {
+    position: absolute;
+    font-size: 1.1em;
+    width: 80%;
+    top: 65%;
+    left: 35px;
+    line-height: 1.5em;
     text-align: center;
 }
 
-#page7 .p1 {
-    position: absolute;
-    font-size: 1.1em;
-    width: 80%;
-    top: 30%;
-    left: 35px;
-    animation: slideUpIntro 0.5s linear 0.3s backwards, slideOutIntro 0.3s linear 5.3s forwards;
+#page7 .IGEday {
+    animation: slideInInfo 0.5s linear 7.5s backwards, fadeOutTextLogo 0.5s linear 11s forwards;
 }
 
-#page7 .p2 {
-    position: absolute;
-    font-size: 1.1em;
-    width: 80%;
-    top: 40%;
-    left: 35px;
-    animation: slideUpIntro 0.5s linear 3.5s backwards,  slideOutIntro 0.4s linear 5.5s forwards;
+#page7 .funding {
+    animation: slideInInfo 0.5s linear 11.5s backwards, fadeOutTextLogo 0.5s linear 15s forwards;
 }
 
-#page7 .introducePlaylist {
-    font-size: 1.3em;
-    font-weight: 400;
-    width: 80%;
-    margin: 200px auto 50px auto;
-    animation: slideUpIntro 0.5s linear 6s backwards, moveUpIntro 0.5s linear 10.5s forwards, slideOutIntro 0.4s linear 17.5s forwards;
+#page7 .user {
+    animation: slideInInfo 0.5s linear 15.5s backwards, fadeOutTextLogo 0.5s linear 17.5s forwards;
 }
 
-@keyframes moveUpIntro {
-    100% {
-        margin-top: 125px;
-    }
-}
-
-#page7 .playlist {
-    display: block;
-    width: 250px;
-    height: 0;
-    margin: 300px auto 0 auto;
-    box-shadow: 0 0 10px rgba(199, 234, 70, 0.3);
-    object-fit: cover;
-    object-position: 0 0;
-    animation: foldUp 0.7s linear 11s forwards, slideOutIntro 0.4s linear 17.5s forwards;
-}
-
-#page7 .download {
-    position: absolute;
-    z-index: 1;
-    top: 80%;
-    left: 27%;
-    background: transparent;
-    border: #C7EA46 solid 5px;
-    border-radius: 25px;
-    padding: 1em 2em;
-    color: #C7EA46;
-    animation: fadeInDownload 0.5s linear 12s backwards,  slideOutDownload 0.4s linear 17.5s forwards;
-}
-
-@keyframes foldUp {
-    0% {
-        width: 250px;
-        height: 0;
-    }
-    100% {
-        width: 250px;
-        height: 246px;
-        transform: translateY(-246px);
-    }
-}
-
-#page7 .download:hover {
-    cursor: pointer;
-    background: rgba(199, 234, 70, 0.05);
-}
-
-@keyframes slideUpIntro {
+@keyframes slideInInfo {
     0% {
         opacity: 0;
-        transform: translateY(40px);
-    }
-}
-
-@keyframes fadeInDownload {
-    0% {
-        opacity: 0;
-    }
-}
-
-@keyframes slideOutIntro {
-    100% {
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-}
-
-@keyframes slideOutDownload {
-    100% {
-        opacity: 0;
-        transform: translateY(200px);
+        transform: translateY(30px);
     }
 }

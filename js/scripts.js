@@ -227,8 +227,6 @@ function newPage(n) {
     } else if (n == 5) {
 
     } else if (n == 6) {
-
-    } else if (n == 7) {
         var paragraph1 = document.createElement("p");
         paragraph1.classList.add("p1");
         paragraph1.innerHTML = "I can keep on rambling about who I am and what I do";
@@ -256,7 +254,30 @@ function newPage(n) {
         linkToPdf.appendChild(button);
 
         document.getElementById("content").append(paragraph1, paragraph2, paragraph3, playlist, linkToPdf);
-    } else if (n == 8) {
+    } else if (n == 7) {
+        var spotify = document.createElement("p");
+        spotify.classList.add("spotify");
+        spotify.innerHTML = "There is one company that has lived in my head, rent-free, ever since I got interested in tech.";
+
+        var spotifyLogo = document.createElement("img");
+        spotifyLogo.src = "images/spotify.png";
+        spotifyLogo.classList.add("spotifyLogo");
+        
+        var IGEday = document.createElement("p");
+        IGEday.classList.add("IGEday");
+        IGEday.innerHTML = "My first visit to a tech company was to Spotify on IGEday 2017.";
+
+        var funding = document.createElement("p");
+        funding.classList.add("funding");
+        funding.innerHTML = "Spotify funded my courses at Hello World! during the entire 2017.";
+
+        var user = document.createElement("p");
+        user.classList.add("user");
+        user.innerHTML = "I am an avid user of the Spotify app.";
+
+        document.getElementById("content").append(spotify, spotifyLogo, IGEday, funding, user);
+    }  
+    else if (n == 8) {
 
     }
 }

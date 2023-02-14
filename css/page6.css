@@ -1,0 +1,105 @@
+#page6 {
+    background-color: #012231;
+    color: #C7EA46;
+    text-align: center;
+}
+
+#page6 .p1 {
+    position: absolute;
+    font-size: 1.1em;
+    width: 80%;
+    top: 30%;
+    left: 35px;
+    animation: slideUpIntro 0.5s linear 0.3s backwards, slideOutIntro 0.3s linear 5.3s forwards;
+}
+
+#page6 .p2 {
+    position: absolute;
+    font-size: 1.1em;
+    width: 80%;
+    top: 40%;
+    left: 35px;
+    animation: slideUpIntro 0.5s linear 3.5s backwards,  slideOutIntro 0.4s linear 5.5s forwards;
+}
+
+#page6 .introducePlaylist {
+    font-size: 1.3em;
+    font-weight: 400;
+    width: 80%;
+    margin: 200px auto 50px auto;
+    animation: slideUpIntro 0.5s linear 6s backwards, moveUpIntro 0.5s linear 10.5s forwards, slideOutIntro 0.4s linear 17.5s forwards;
+}
+
+@keyframes moveUpIntro {
+    100% {
+        margin-top: 125px;
+    }
+}
+
+#page6 .playlist {
+    display: block;
+    width: 250px;
+    height: 0;
+    margin: 300px auto 0 auto;
+    box-shadow: 0 0 10px rgba(199, 234, 70, 0.3);
+    object-fit: cover;
+    object-position: 0 0;
+    animation: foldUp 0.7s linear 11s forwards, slideOutIntro 0.4s linear 17.5s forwards;
+}
+
+#page6 .download {
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 27%;
+    background: transparent;
+    border: #C7EA46 solid 5px;
+    border-radius: 25px;
+    padding: 1em 2em;
+    color: #C7EA46;
+    animation: fadeInDownload 0.5s linear 12s backwards,  slideOutDownload 0.4s linear 17.5s forwards;
+}
+
+@keyframes foldUp {
+    0% {
+        width: 250px;
+        height: 0;
+    }
+    100% {
+        width: 250px;
+        height: 246px;
+        transform: translateY(-246px);
+    }
+}
+
+#page6 .download:hover {
+    cursor: pointer;
+    background: rgba(199, 234, 70, 0.05);
+}
+
+@keyframes slideUpIntro {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
+
+@keyframes fadeInDownload {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutIntro {
+    100% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes slideOutDownload {
+    100% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+}
