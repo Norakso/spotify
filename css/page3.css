@@ -224,6 +224,8 @@
     animation: appearFromBottom 0.4s ease-out 11s forwards, fadeOutAll 0.5s linear 34s forwards;
 }
 #page3 .project2 {
+    padding: 1em 1.5em;
+    width: 76%;
     background-color: #006161;
     opacity: 1;
     animation: appearFromRight 0.4s ease-out 16s backwards, fadeOutAll 0.5s linear 34s forwards;

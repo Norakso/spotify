@@ -12,8 +12,12 @@ function page(n) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 35000);
     } else if (pageIndex + n == 6) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 24000);
-    }
-    else {
+    } else if (pageIndex + n == 7) {
+        myTimer = setInterval(function(){plusPages(7)}, 23000);
+    } else if (pageIndex + n > 7) {
+        clearInterval(myTimer);
+        return;
+    } else {
         myTimer = setInterval(function(){plusPages(n + 1)}, 18000);
     }
     showPage(pageIndex += n);
@@ -68,18 +72,28 @@ function showPage(n) {
 }
 
 function plusPages(n){
+    if (n >= 7) {
+        return;
+    }
+
     clearInterval(myTimer);
+
     if (n < 0){
     showPage(pageIndex -= 1);
     } else {
     showPage(pageIndex += 1); 
     }
+
     if ((n == 0 || n == -1) && document.getElementsByClassName("screen").id == "page1") {
         myTimer = setInterval(function(){plusPages(n + 1)}, 8500);
     } else if (pageIndex == 3) {
         myTimer = setInterval(function(){plusPages(n + 1)}, 35000);
     } else if (pageIndex == 6) {
-        myTimer = setInterval(function(){plusPages(n + 1)}, 24000);
+        clearInterval(myTimer);
+        myTimer = setTimeout(function(){plusPages(n + 1)}, 24000);
+    } else if (pageIndex > 6) {
+        clearInterval(myTimer);
+        return;
     } else {
         myTimer = setInterval(function(){plusPages(n + 1)}, 18000);
     }
@@ -289,6 +303,9 @@ function page6() {
     spotify.classList.add("spotify");
     spotify.innerHTML = "There is one company that has lived in my head, rent-free, ever since I got interested in tech.";
 
+    var shadow = document.createElement("div");
+    shadow.classList.add("shadow");
+
     var spotifyLogo = document.createElement("img");
     spotifyLogo.src = "images/spotify.png";
     spotifyLogo.classList.add("spotifyLogo");
@@ -305,9 +322,51 @@ function page6() {
     user.classList.add("user");
     user.innerHTML = "I am an avid user of the Spotify app.";
 
-    document.getElementById("content").append(spotify, spotifyLogo, IGEday, funding, user);
+    document.getElementById("content").append(spotify, shadow, spotifyLogo, IGEday, funding, user);
 }
 
 function page7() {
+    var fanText = "Now I want to be more than just a fan.";
+    var bandText = "I am ready to join the band as a Summer Intern at Spotify in Stockholm.";
+    var applicationText = "I am most interested in working as a";
+    var orText = "or";
 
+    var fan = document.createElement("p");
+    fan.classList.add("fan");
+    fan.innerHTML = "";
+
+    var joinBand = document.createElement("p");
+    joinBand.classList.add("joinBand");
+    joinBand.innerHTML = "";
+
+    var applyingTo = document.createElement("p");
+    applyingTo.classList.add("applyingTo");
+    applyingTo.innerHTML = "";
+
+    var internship1 = document.createElement("div");
+    internship1.classList.add("internships", "internship1");
+    internship1.innerHTML = "Data Scientist Intern";
+
+    var or = document.createElement("p");
+    or.classList.add("or");
+    or.innerHTML = "";
+
+    var internship2 = document.createElement("div");
+    internship2.classList.add("internships", "internship2");
+    internship2.innerHTML = "Frontend Engineering Intern";
+
+    document.getElementById("content").append(fan, joinBand, applyingTo, internship1, or, internship2);
+
+    setTimeout(typeWriter, 1000, fan, fanText, 0);
+    setTimeout(typeWriter, 6000, joinBand, bandText, 0);
+    setTimeout(typeWriter, 16000, applyingTo, applicationText, 0);
+    setTimeout(typeWriter, 23000, or, orText, 0);
+}
+
+function typeWriter(element, text, i) {
+    if (i < text.length) {
+        element.innerHTML += text.charAt(i);
+        i++
+        setTimeout(typeWriter, 100, element, text, i);
+    }
 }

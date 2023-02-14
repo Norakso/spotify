@@ -32,11 +32,6 @@ body {
     overflow: hidden;
 }
 
-#page7 {
-    background-color: #C7EA46;
-    color: #FE019A;
-}
-
 .progress-bar {
     position: relative;
     z-index: 1;
@@ -90,7 +85,7 @@ body {
     animation: progressBar 35s linear forwards;
 }
 
-#page7 #animateProgress {
+#page6 #animateProgress {
     animation: progressBar 24s linear forwards;
 }
 

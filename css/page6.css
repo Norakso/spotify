@@ -12,6 +12,19 @@
     animation: fadeInTextLogo 0.5s linear 0.5s backwards, fadeOutTextLogo 0.5s linear 6s forwards;
 }
 
+#page6 .shadow {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    top: 30%;
+    left: 80px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeInTextLogo 0.5s linear 6.5s backwards, fadeOutTextLogo 0.5s linear 23.5s forwards;
+}
+
 #page6 .spotifyLogo {
     position: absolute;
     display: block;

@@ -1,0 +1,54 @@
+#page7 {
+    background-color: #C7EA46;
+    color: #012231;
+}
+
+#page7 p {
+    font-size: 1.3em;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#page7 .fan {
+    font-weight: 500;
+    margin-top: 80px;
+}
+
+#page7 .joinBand {
+    margin: 30px auto;
+}
+
+#page7 .applyingTo {
+    margin-top: 60px;
+}
+
+#page7 .internships {
+    display: block;
+    width: 70%;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 20px auto;
+    padding: 1em 0;
+    border-radius: 10px;
+}
+
+#page7 .internship1 {
+    background-color: #006161;
+    animation: slideInInternship 0.3s linear 21s backwards;
+}
+
+#page7 .internship2 {
+    background-color: #012231;
+    animation: slideInInternship 0.3s linear 24s backwards;
+}
+
+@keyframes slideInInternship {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+}
