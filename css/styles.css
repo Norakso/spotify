@@ -32,11 +32,6 @@ body {
     overflow: hidden;
 }
 
-#page4 {
-    background-color: #301934;
-    color: #C7EA46;
-}
-
 #page5 {
     background-color: #81E4AE;
     color: #301934;
@@ -44,7 +39,7 @@ body {
 
 #page6 {
     background-color: #301934;
-    color: #81E4AE;
+    color: #C7EA46;
 }
 
 #page8 {

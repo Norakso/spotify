@@ -114,11 +114,11 @@ function newPage(n) {
     } else if (n == 2) {
         var totalCourses = document.createElement("p");
         totalCourses.classList.add("totalCourses");
-        totalCourses.innerHTML = "I have participated in 4 different organisations' science and tech courses"
+        totalCourses.innerHTML = "I have participated in 4 different organisations' science and tech courses.";
 
         var topCourse = document.createElement("p");
         topCourse.classList.add("topCourse");
-        topCourse.innerHTML = "But with one company, it was love at first course"
+        topCourse.innerHTML = "But with one company, it was love at first course.";
 
         var square1 = document.createElement("div");
         square1.classList.add("square1");
@@ -130,7 +130,7 @@ function newPage(n) {
 
         var topCompany = document.createElement("p");
         topCompany.classList.add("topCompany");
-        topCompany.innerHTML = "I have spent 5 years working at Hello World! ever since, and had 4 different roles during this time";
+        topCompany.innerHTML = "I have spent 5 years working at Hello World! ever since, and had 4 different roles during this time.";
 
         document.getElementById("content").append(totalCourses, topCourse, square1, square2, HWlogo, topCompany);
     } else if (n == 3) {
@@ -176,23 +176,54 @@ function newPage(n) {
 
         var project1 = document.createElement("div")
         project1.classList.add("projects", "project1");
-        project1.innerHTML = "Organizing and hosting girls-only inspirational events for young girls to try coding and digital creation."
+        project1.innerHTML = "Organizing and hosting girls-only inspirational events for young girls to try coding and digital creation.";
 
         var project2 = document.createElement("div");
         project2.classList.add("projects", "project2");
-        project2.innerHTML = "Regulating the restructuring of Hello World!'s courses to match our new formats and standards."
+        project2.innerHTML = "Regulating the restructuring of Hello World!'s courses to match our new formats and standards.";
 
         var project3 = document.createElement("div");
         project3.classList.add("projects", "project3");
-        project3.innerHTML = "Inspiring kids to try coding on a weekly basis and getting inspired myself from collaborations with partner companies."
+        project3.innerHTML = "Inspiring kids to try coding on a weekly basis and getting inspired myself from collaborations with partner companies.";
 
         var project4 = document.createElement("div");
         project4.classList.add("projects", "project4");
-        project4.innerHTML = "Developing a web quiz recommending participants a suitable course based on preferences and experiences."
+        project4.innerHTML = "Developing a web quiz recommending participants a suitable course based on preferences and experiences.";
         
         document.getElementById("content").append(heading1, p1, p2, p3, p4, rank1, rank2, rank3, rank4, heading2, project1, project2, project3, project4);
     } else if (n == 4) {
+        var heading = document.createElement("h1");
+        heading.classList.add("multilingual");
+        heading.innerHTML = "I am a multilingual coder.";
 
+        var paragraph = document.createElement("p");
+        paragraph.classList.add("pMultilingual");
+        paragraph.innerHTML = "I refuse to let one programming language define me.";
+
+        var htmlCSS = document.createElement("div");
+        htmlCSS.classList.add("languages", "htmlCSS");
+        htmlCSS.innerHTML = "HTML & CSS";
+
+        var java = document.createElement("div");
+        java.classList.add("languages", "java");
+        java.innerHTML = "Java";
+
+        var postgresql = document.createElement("div");
+        postgresql.classList.add("languages", "postgresql");
+        postgresql.innerHTML = "PostgreSQL";
+
+        var python = document.createElement("div");
+        python.classList.add("languages", "python");
+        python.innerHTML = "Python";
+
+        var javascript = document.createElement("div");
+        javascript.classList.add("languages", "javascript");
+        javascript.innerHTML = "JavaScript";
+
+        var cover = document.createElement("div");
+        cover.classList.add("cover");
+
+        document.getElementById("content").append(heading, paragraph, htmlCSS, java, postgresql, python, javascript, cover);
     } else if (n == 5) {
 
     } else if (n == 6) {

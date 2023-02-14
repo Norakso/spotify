@@ -226,17 +226,17 @@
 #page3 .project2 {
     background-color: #006161;
     opacity: 1;
-    animation: appearFromRight 0.4s ease-out 15s backwards, fadeOutAll 0.5s linear 34s forwards;
+    animation: appearFromRight 0.4s ease-out 16s backwards, fadeOutAll 0.5s linear 34s forwards;
 }
 #page3 .project3 {
     background-color: #301934;
     opacity: 1;
-    animation: appearFromLeft 0.4s ease-out 22s backwards, fadeOutAll 0.5s linear 34s forwards;
+    animation: appearFromLeft 0.4s ease-out 21s backwards, fadeOutAll 0.5s linear 34s forwards;
 }
 #page3 .project4 {
     margin-top: 200px;
     background-color: #012231;
-    animation: appearFromBottom 0.4s ease-out 28s forwards, fadeOutAll 0.5s linear 34s forwards;
+    animation: appearFromBottom 0.4s ease-out 26s forwards, fadeOutAll 0.5s linear 34s forwards;
 }
 
 @keyframes appearFromBottom {

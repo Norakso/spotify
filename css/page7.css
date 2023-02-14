@@ -15,17 +15,18 @@
     display: block;
     width: 250px;
     height: 0;
-    margin: 246px auto 0 auto;
+    margin: 300px auto 0 auto;
     box-shadow: 0 0 10px rgba(199, 234, 70, 0.3);
     object-fit: cover;
     object-position: 0 0;
-    animation: foldUp 2s linear forwards;
+    animation: foldUp 1s linear 3s forwards;
 }
 
 #page7 .download {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    margin-top: 50px;
+    top: 80%;
+    left: 27%;
     background: transparent;
     border: #C7EA46 solid 5px;
     border-radius: 25px;
@@ -33,20 +34,20 @@
     color: #C7EA46;
 }
 
+@keyframes foldUp {
+    0% {
+        width: 250px;
+        height: 0;
+    }
+    100% {
+        width: 250px;
+        height: 246px;
+        transform: translateY(-246px);
+    }
+}
+
 #page7 .download:hover {
     cursor: pointer;
     background: rgba(199, 234, 70, 0.05);
 }
 
-@keyframes foldUp {
-    0% {
-        width: 250px;
-        height: 0;
-        margin: 246px auto 0 auto;
-    }
-    100% {
-        width: 250px;
-        height: 246px;
-        margin: 0 auto 0 auto;
-    }
-}
