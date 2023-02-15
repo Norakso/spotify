@@ -89,6 +89,10 @@ body {
     animation: progressBar 24s linear forwards;
 }
 
+#page7 #animateProgress {
+    animation: progressBar 28s linear forwards;
+}
+
 #reanimateProgress {
     animation: progressBar2 9s linear forwards;
 }
