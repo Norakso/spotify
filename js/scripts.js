@@ -328,7 +328,7 @@ function page6() {
 function page7() {
     var fanText = "Now I want to be more than just a fan.";
     var bandText = "I want to join the band as a Summer Intern at Spotify in Stockholm.";
-    var applicationText = "I am most interested in working as a";
+    var applicationText = "I am mostly interested in working as a";
     var orText = "or";
 
     var fan = document.createElement("p");
