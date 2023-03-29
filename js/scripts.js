@@ -345,7 +345,7 @@ function page7() {
 
     var internship1 = document.createElement("div");
     internship1.classList.add("internships", "internship1");
-    internship1.innerHTML = "Data Scientist Intern";
+    internship1.innerHTML = "Data Science Intern";
 
     var or = document.createElement("p");
     or.classList.add("or");
