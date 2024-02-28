@@ -286,8 +286,8 @@ function page5() {
     playlist.classList.add("playlist");
 
     var linkToPdf = document.createElement("a");
-    linkToPdf.href = "cv/Nora_Sorsenger_CV_ENG.pdf";
-    linkToPdf.download = "cv/Nora_Sorsenger_CV_ENG.pdf".split('/').pop();
+    linkToPdf.href = "cv/Nora_Sorsenger_CV.pdf";
+    linkToPdf.download = "cv/Nora_Sorsenger_CV.pdf".split('/').pop();
 
     var button = document.createElement("button");
     button.classList.add("download");
