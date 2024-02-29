@@ -10,6 +10,7 @@
     font-weight: 600;
     opacity: 0;
     animation: fadeInHeader 0.6s ease-in 2.5s forwards, fadeOutHeader 1s ease-out 5.5s forwards;
+    -webkit-animation: fadeInHeader 0.6s ease-in 2.5s forwards, fadeOutHeader 1s ease-out 5.5s forwards;
 }
 
 @keyframes fadeInHeader {
@@ -25,6 +26,29 @@
 }
 
 @keyframes fadeOutHeader {
+    0% {
+        font-size: 2.5em;
+        opacity: 1;
+    }
+    100% {
+        font-size: 3em;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeInHeader {
+    0% {
+        font-size: 1.5em;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 265px;
+        font-size: 2.5em;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOutHeader {
     0% {
         font-size: 2.5em;
         opacity: 1;
