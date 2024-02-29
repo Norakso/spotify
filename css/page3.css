@@ -38,10 +38,12 @@
 }
 
 @keyframes slideOut3 {
-    100% {
+    95% {
         opacity: 0;
         margin: 60px auto 120px auto;
     }
+    100% {
+        display: none;
 }
 
 #page3 p {
