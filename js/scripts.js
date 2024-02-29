@@ -353,7 +353,7 @@ function page7() {
 
     var internship2 = document.createElement("div");
     internship2.classList.add("internships", "internship2");
-    internship2.innerHTML = "Frontend Engineering Intern";
+    internship2.innerHTML = "Engineering Intern";
 
     document.getElementById("content").append(fan, joinBand, applyingTo, internship1, or, internship2);
 
