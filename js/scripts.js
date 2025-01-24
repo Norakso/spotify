@@ -328,7 +328,7 @@ function page6() {
 function page7() {
     var fanText = "Now I want to be more than just a fan.";
     var bandText = "I want to join the band as a Summer Intern at Spotify in Stockholm.";
-    var applicationText = "I am mostly interested in working as a";
+    var applicationText = "I am mostly interested in working with ";
     var orText = "or";
 
     var fan = document.createElement("p");
@@ -345,7 +345,7 @@ function page7() {
 
     var internship1 = document.createElement("div");
     internship1.classList.add("internships", "internship1");
-    internship1.innerHTML = "Data Science Intern";
+    internship1.innerHTML = "Web/Frontend Engineering";
 
     var or = document.createElement("p");
     or.classList.add("or");
@@ -353,7 +353,7 @@ function page7() {
 
     var internship2 = document.createElement("div");
     internship2.classList.add("internships", "internship2");
-    internship2.innerHTML = "Engineering Intern";
+    internship2.innerHTML = "Data Science";
 
     document.getElementById("content").append(fan, joinBand, applyingTo, internship1, or, internship2);
 
